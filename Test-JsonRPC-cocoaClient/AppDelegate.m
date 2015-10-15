@@ -11,6 +11,7 @@
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+
 @end
 
 @implementation AppDelegate
@@ -21,10 +22,16 @@
     
     // Invocation
     [client invokeMethod:@"hello"
-                 success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"success");
+        success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"success %@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"fail");
+        NSLog(@"fail %@", error);
+    }];
+    
+    [client invokeMethod:@"addition" withParameters:@[@(11), @(42)] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"success %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"fail %@", error);
     }];
     
 }
