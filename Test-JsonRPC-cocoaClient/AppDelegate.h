@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <AFJSONRPCClient/AFJSONRPCClient.h>
+#import "AFJSONRPCCLIENT+Auth.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

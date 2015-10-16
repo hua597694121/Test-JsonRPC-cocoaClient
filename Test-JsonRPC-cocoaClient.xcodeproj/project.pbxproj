@@ -11,6 +11,8 @@
 		471FFC9D1BCF6C9100C10169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 471FFC9C1BCF6C9100C10169 /* main.m */; };
 		471FFC9F1BCF6C9100C10169 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471FFC9E1BCF6C9100C10169 /* Images.xcassets */; };
 		471FFCA21BCF6C9100C10169 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471FFCA01BCF6C9100C10169 /* MainMenu.xib */; };
+		47BE9B351BD0E68F00B31DE4 /* AFJSONRPCClient_Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BE9B341BD0E68F00B31DE4 /* AFJSONRPCClient_Auth.m */; };
+		47BE9B381BD0E80F00B31DE4 /* AFJSONRPCCLIENT+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BE9B371BD0E80F00B31DE4 /* AFJSONRPCCLIENT+Auth.m */; };
 		63220AB3B190A2475FE47530 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DDD0519D437B94CD3F67E3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 		471FFC9C1BCF6C9100C10169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		471FFC9E1BCF6C9100C10169 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		471FFCA11BCF6C9100C10169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		47BE9B331BD0E68F00B31DE4 /* AFJSONRPCClient_Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRPCClient_Auth.h; sourceTree = "<group>"; };
+		47BE9B341BD0E68F00B31DE4 /* AFJSONRPCClient_Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRPCClient_Auth.m; sourceTree = "<group>"; };
+		47BE9B361BD0E80F00B31DE4 /* AFJSONRPCCLIENT+Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFJSONRPCCLIENT+Auth.h"; sourceTree = "<group>"; };
+		47BE9B371BD0E80F00B31DE4 /* AFJSONRPCCLIENT+Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFJSONRPCCLIENT+Auth.m"; sourceTree = "<group>"; };
 		48CA4DDF68701E960B8F3329 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F8DDD0519D437B94CD3F67E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -62,6 +68,10 @@
 			children = (
 				471FFC991BCF6C9100C10169 /* AppDelegate.h */,
 				471FFC9A1BCF6C9100C10169 /* AppDelegate.m */,
+				47BE9B331BD0E68F00B31DE4 /* AFJSONRPCClient_Auth.h */,
+				47BE9B341BD0E68F00B31DE4 /* AFJSONRPCClient_Auth.m */,
+				47BE9B361BD0E80F00B31DE4 /* AFJSONRPCCLIENT+Auth.h */,
+				47BE9B371BD0E80F00B31DE4 /* AFJSONRPCCLIENT+Auth.m */,
 				471FFC9E1BCF6C9100C10169 /* Images.xcassets */,
 				471FFCA01BCF6C9100C10169 /* MainMenu.xib */,
 				471FFC971BCF6C9100C10169 /* Supporting Files */,
@@ -215,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47BE9B351BD0E68F00B31DE4 /* AFJSONRPCClient_Auth.m in Sources */,
 				471FFC9D1BCF6C9100C10169 /* main.m in Sources */,
 				471FFC9B1BCF6C9100C10169 /* AppDelegate.m in Sources */,
+				47BE9B381BD0E80F00B31DE4 /* AFJSONRPCCLIENT+Auth.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

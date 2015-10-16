@@ -18,7 +18,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
-    AFJSONRPCClient *client = [AFJSONRPCClient clientWithEndpointURL:[NSURL URLWithString:@"http://localhost/Test-JsonRPC-phpServer/Server.php"]];
+    AFJSONRPCClient *client = [AFJSONRPCClient clientWithEndpointURL:[NSURL URLWithString:@"http://localhost/Test-JsonRPC-phpServer/Server_Auth.php"]];
+    
+    [client setUser:@"testuser" andPass:@"testpass"];
     
     // Invocation
     [client invokeMethod:@"hello"
@@ -29,6 +31,12 @@
     }];
     
     [client invokeMethod:@"addition" withParameters:@[@(11), @(42)] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"success %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"fail %@", error);
+    }];
+    
+    [client invokeMethod:@"random" withParameters:@[@(11), @(42)] success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"success %@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"fail %@", error);
